@@ -1,27 +1,85 @@
 <!doctype html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
 
 
 
 
 
-<h2>JavaScript Loop Practice</h2>
-
+    <h2>JavaScript Loop create list and get data from json</h2>
+    <div id="result1"></div>
+    <div id="result2"></div>
 
 
 
     <script>
-    
+
+        var ab = [{
+            "fruit": "Apple",
+            "season": "Winter",
+            "color": "Red"
+        }, {
+            "fruit": "Banana",
+            "season": "Rainy",
+            "color": "Red"
+        }, {
+            "fruit": "Orange",
+            "season": "Summer",
+            "color": "Red"
+        },]
+            ;
+
+
+
+        var text, text1;
+        text="<ol>"
+        for (z in ab){    //for/in loop
+        text += "<li>"+ "I Love " +"<b>" + ab[z].fruit +"</b>" +" in " +"<b>" + ab[z].season + "</b>"+ ' Seasons.' +  "</li>" ;
+        }
+        text +="</ol>"
+
+        document.getElementById("result1").innerHTML = text;
+
+
+
+
+
+        "<br>"
+                        // FOREACH LOOP 
+
+        var b = ["ram","shayam", 'sita'];
+
+
+        text1 = "<ul>"
+
+        b.forEach(myFun);    //forEach loop
+        function myFun(x, i) {
+            text1 += "<li>" + x + ' <b>Index has </b> ' + i + "</li>"
+
+        }
+        text1 += "</ul>"
+
+        document.getElementById("result2").innerHTML = text1;
+
+
+
+
+
+
+
+
 
     </script>
-    
+
 </body>
+
 </html>
