@@ -1,0 +1,51 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+<h2>JavaScript conditional statement to sort three numbers large to small</h2>
+
+
+
+
+    <script>
+    
+
+    var x,y,z;
+
+    x = prompt("1st number");
+    y = prompt("2nd number");
+    z = prompt("3rd number");
+
+    if ((x>z && x>y && y>z)){
+        alert( x + ' ' + y + ' ' + z);
+    }
+    if ((x>z && x>y && z>y)){
+        alert( x + ' ' + z + ' ' + y);
+    }
+    else if ((y>x && y>z && x>z)){
+        alert( y + ' ' + x + ' ' + z);
+    }
+    else if ((y>x && y>z && z>x)){
+        alert( y + ' ' + z + ' ' + x);
+    }
+    else if ((z>x && z>y && x>y)){
+        alert(z + ' ' + x + ' ' + y);
+    }else{
+        alert(z +' '+ y +' ' + x);
+    }
+
+    </script>
+    
+</body>
+</html>
