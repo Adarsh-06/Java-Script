@@ -17,13 +17,19 @@
     var age =  2018 - birthYear;
     return age ;
   }
-  function retirenment(age){
+  function retirenment(age, name){
       var ret = 65 - getAge(age);
-      return ret ;
+      
+      if (ret > 0) {
+      console.log("Dear " + name+  " you have " + ret + " years are left to retirenment");
+      }else{
+          console.log("Dear " + name + " you are retired");
+      }
+      
   }
 
-  var z = retirenment(1990)
-  console.log(z + " years are left in your returenment dear");
+  retirenment(1990, 'Adarsh');
+  
   
     
     
