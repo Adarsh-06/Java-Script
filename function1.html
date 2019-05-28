@@ -13,20 +13,18 @@
 
     <script>
     
-    function getCurrentAge(birthDate){
-        return currentAge = 2018 - birthDate;
-    }
-    var Adarsh = getCurrentAge(1990);
-    console.log("Your current age is " + Adarsh);
+  function getAge(birthYear){
+    var age =  2018 - birthYear;
+    return age ;
+  }
+  function retirenment(age){
+      var ret = 65 - getAge(age);
+      return ret ;
+  }
 
-    function GetRetirenment(year, name){
-        var age = getCurrentAge(year);
-        var retirenment = 65 - age;
-        console.log(name + " will retire in next " + retirenment + " years.");
-        
-    }
-    GetRetirenment(1990, "Adarsh");
-
+  var z = retirenment(1990)
+  console.log(z + " years are left in your returenment dear");
+  
     
     
     </script>
